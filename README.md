@@ -20,11 +20,13 @@
     - [Django 基础](#django-%E5%9F%BA%E7%A1%80)
     - [Django 进阶](#django-%E8%BF%9B%E9%98%B6)
     - [Django 实战](#django-%E5%AE%9E%E6%88%98)
+    - [Django 面试](#django-%E9%9D%A2%E8%AF%95)
   - [操作系统 基础](#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9F%BA%E7%A1%80)
   - [Linux 命令行 基础](#linux-%E5%91%BD%E4%BB%A4%E8%A1%8C-%E5%9F%BA%E7%A1%80)
   - [数据库/SQL/MySQL](#%E6%95%B0%E6%8D%AE%E5%BA%93sqlmysql)
   - [Docker 基础](#docker-%E5%9F%BA%E7%A1%80)
   - [其他](#%E5%85%B6%E4%BB%96)
+  - [为分类](#%E4%B8%BA%E5%88%86%E7%B1%BB)
 
 ## Python
 
@@ -109,11 +111,45 @@
 
 ### Django 基础
 
+- [Django models.py, what's the difference between default, null, and blank?](https://stackoverflow.com/questions/4384098/in-django-models-py-whats-the-difference-between-default-null-and-blank)
+- [Django Making queries](https://docs.djangoproject.com/en/dev/topics/db/queries/#complex-lookups-with-q-objects) :star:
+- [Django queries - Aggregation](https://docs.djangoproject.com/en/2.2/topics/db/aggregation/) :star:
+- [Django Admin 管理工具](http://www.runoob.com/django/django-admin-manage-tool.html)
+- [Django 框架全面讲解](https://www.cnblogs.com/LiCheng-/p/6920900.html) :star: :star2:
+- [Django 的中间件原理&执行](https://blog.csdn.net/weixin_42181824/article/details/81125406)
+- [uWSGI+django+nginx 的工作原理流程与部署历程](https://blog.csdn.net/c465869935/article/details/53242126) :star:
+- [Setting up Django and your web server with uWSGI and nginx 官方](https://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html)
+- [每个 Model 自动添加上必备 3 字段, create_time/update_time](https://segmentfault.com/q/1010000010700842) :star:
+- [Django 的时间字段 DateTimeField](https://www.cnblogs.com/wuxunyan/p/9266888.html)
+- [Django--自定义 Command 命令](https://www.cnblogs.com/polly-ling/p/9830060.html) :star:
+- [Django Model 规范](https://steelkiwi.com/blog/best-practices-working-django-models-python/) :yellow_heart:
+
 ### Django 进阶
+
+- [XSS 与 CSRF](https://segmentfault.com/a/1190000007059639)
+- [Django 之 CSRF](https://segmentfault.com/a/1190000007059639)
+- [CSRF 攻击原理&Django 的应用方法](https://blog.csdn.net/u012556900/article/details/57412707)
+- [OAuth Authentication in Django with social-auth](https://medium.com/trabe/oauth-authentication-in-django-with-social-auth-c67a002479c1)
+- [A Django content management system](https://wagtail.io)
 
 ### Django 实战
 
+- [combine 2 or more querysets in a Django view](https://stackoverflow.com/questions/431628/how-to-combine-2-or-more-querysets-in-a-django-view)
+- [django 项目之 api 验证部分](https://www.cnblogs.com/ArmoredTitan/p/7639387.html) :star:
+- [django 之基于 requests API 验证](https://blog.csdn.net/bbwangj/article/details/86526228)
+- [drf-yasg - Yet another Swagger generator](https://github.com/axnsan12/drf-yasg) :star:
+- [Django queryset values_list return a list](https://stackoverflow.com/questions/37140426/does-django-queryset-values-list-return-a-list-object) :star:
 - [objects.all().aggregate(Max('rating'))](https://stackoverflow.com/questions/844591/how-to-do-select-max-in-django)
+- [Django advanced LIKE filtering](https://stackoverflow.com/questions/53087065/django-advanced-like-filtering)
+- [Django JSON response error status](https://stackoverflow.com/questions/35059916/django-json-response-error-status)
+- [RESTful Error Messages with Django by JsonResponse](https://medium.com/@mwhitt.w/restful-error-messages-with-django-537047892dff)
+- [Excluding Basic Authentication In A Single View - Django Rest Framework](https://stackoverflow.com/questions/33539606/excluding-basic-authentication-in-a-single-view-django-rest-framework)
+- [Linux + Nginx + Uwsgi + Django 搭建单服务实现多域名访问](https://mp.weixin.qq.com/s/baYuDLhlFsFrBXqGq9pBDA)
+
+### Django 面试
+
+- [Django 的笔试题 2015](http://python.jobbole.com/81871/)
+- [Django 的认识，面试题](https://www.cnblogs.com/chongdongxiaoyu/p/9403399.html)
 
 ## 操作系统 基础
 
@@ -133,3 +169,8 @@
 
 - [PyCharm 常用快捷键和设置方法](https://www.jb51.net/article/131005.htm?utm_medium=referral)
 - [后端工程师成长路线图](./_static/backend_developer.jpg) :star:
+
+## 为分类
+
+- [HTTP Session、Cookie 机制详解](https://www.cnblogs.com/lyy-5518/p/5460994.html)
+- [跨域的问题](https://segmentfault.com/a/1190000015597029)
