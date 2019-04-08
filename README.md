@@ -26,7 +26,7 @@
   - [数据库/SQL/MySQL](#%E6%95%B0%E6%8D%AE%E5%BA%93sqlmysql)
   - [Docker 基础](#docker-%E5%9F%BA%E7%A1%80)
   - [其他](#%E5%85%B6%E4%BB%96)
-  - [为分类](#%E4%B8%BA%E5%88%86%E7%B1%BB)
+  - [未分类](#%E6%9C%AA%E5%88%86%E7%B1%BB)
 
 ## Python
 
@@ -46,7 +46,7 @@
 - [Absolute vs Relative Imports in Python](https://realpython.com/absolute-vs-relative-python-imports/)
 - [itertools — Functions creating iterators for efficient looping](https://docs.python.org/3/library/itertools.html#module-itertools) :star:
 - [python 语法之 装饰器 decorator](https://www.cnblogs.com/yutongzhu/p/5615764.html) :star: :star2:
-- [Python decorator](https://chase-seibert.github.io/blog/2013/12/17/python-decorator-optional-parameter.html#) :star:
+- [Python decorator](https://chase-seibert.github.io/blog/2013/12/17/python-decorator-optional-parameter.html#) :star: :star2:
 - [Python Decorators - \_\_call\_\_ in class](https://stackoverflow.com/questions/19497771/python-decorators-call-in-class)
 - [元类/metaclasses](https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python) :star: :star2:
 - [为什么 Python 不支持函数重载](https://www.zhihu.com/question/20053359)
@@ -97,6 +97,7 @@
 - [pandas.pivot_table](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.pivot_table.html)
 - [Pandas date_range to generate monthly data](https://stackoverflow.com/questions/34915828/pandas-date-range-to-generate-monthly-data-at-beginning-of-the-month)
 - [numpy.insert](https://www.tutorialspoint.com/numpy/numpy_insert.htm)
+- [Remove rows with duplicate indices](https://stackoverflow.com/questions/13035764/remove-rows-with-duplicate-indices-pandas-dataframe-and-timeseries/34297689#34297689)
 
 ## Python 面试
 
@@ -122,10 +123,15 @@
 - [每个 Model 自动添加上必备 3 字段, create_time/update_time](https://segmentfault.com/q/1010000010700842) :star:
 - [Django 的时间字段 DateTimeField](https://www.cnblogs.com/wuxunyan/p/9266888.html)
 - [Django--自定义 Command 命令](https://www.cnblogs.com/polly-ling/p/9830060.html) :star:
-- [Django Model 规范](https://steelkiwi.com/blog/best-practices-working-django-models-python/) :yellow_heart:
+- [Django Model 规范](https://steelkiwi.com/blog/best-practices-working-django-models-python/) :yellow_heart: :star:
+- [Django HttpResponse 与 JsonResponse](https://www.jianshu.com/p/94785f71fdd8)
+- [Django URL 常用模式匹配大全](https://www.jianshu.com/p/257fafc217df)
 
 ### Django 进阶
 
+- [Custom Django Management Commands](https://simpleisbetterthancomplex.com/tutorial/2018/08/27/how-to-create-custom-django-management-commands.html) :star: :star2:
+- [Django 的缓存机制](https://www.cnblogs.com/liuwei0824/p/8520375.html)
+- [`related_name` used for in Django?](https://stackoverflow.com/questions/2642613/what-is-related-name-used-for-in-django)
 - [XSS 与 CSRF](https://segmentfault.com/a/1190000007059639)
 - [Django 之 CSRF](https://segmentfault.com/a/1190000007059639)
 - [CSRF 攻击原理&Django 的应用方法](https://blog.csdn.net/u012556900/article/details/57412707)
@@ -145,6 +151,7 @@
 - [RESTful Error Messages with Django by JsonResponse](https://medium.com/@mwhitt.w/restful-error-messages-with-django-537047892dff)
 - [Excluding Basic Authentication In A Single View - Django Rest Framework](https://stackoverflow.com/questions/33539606/excluding-basic-authentication-in-a-single-view-django-rest-framework)
 - [Linux + Nginx + Uwsgi + Django 搭建单服务实现多域名访问](https://mp.weixin.qq.com/s/baYuDLhlFsFrBXqGq9pBDA)
+- [使用 django-crontab 实现定时任务](https://www.jianshu.com/p/e4a8f173b4b0)
 
 ### Django 面试
 
@@ -169,8 +176,12 @@
 
 - [PyCharm 常用快捷键和设置方法](https://www.jb51.net/article/131005.htm?utm_medium=referral)
 - [后端工程师成长路线图](./_static/backend_developer.jpg) :star:
+- [Markdown 简体中文与西文混排要点 - 李笑来](https://github.com/selfteaching/markdown-writing-with-mixed-cn-en) :star:
 
-## 为分类
+## 未分类
 
 - [HTTP Session、Cookie 机制详解](https://www.cnblogs.com/lyy-5518/p/5460994.html)
 - [跨域的问题](https://segmentfault.com/a/1190000015597029)
+- [Jenkins 构建触发器（定时构建项目](https://blog.csdn.net/e295166319/article/details/52920036)
+- [业务监控工具 Sentry 的搭建与使用](http://www.cnblogs.com/scharfsinnig/p/7467958.html) :yellow_heart: :star2:
+- [Sentry - 处理异常日志的正确姿势 也可 email+钉钉通知](https://segmentfault.com/a/1190000014847638) :star2:
