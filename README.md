@@ -25,6 +25,8 @@
   - [Linux 命令行 基础](#linux-%E5%91%BD%E4%BB%A4%E8%A1%8C-%E5%9F%BA%E7%A1%80)
   - [数据库/SQL/MySQL](#%E6%95%B0%E6%8D%AE%E5%BA%93sqlmysql)
   - [Docker 基础](#docker-%E5%9F%BA%E7%A1%80)
+  - [后台/Backend](#%E5%90%8E%E5%8F%B0backend)
+    - [后台/Backend 面试](#%E5%90%8E%E5%8F%B0backend-%E9%9D%A2%E8%AF%95)
   - [其他](#%E5%85%B6%E4%BB%96)
   - [未分类](#%E6%9C%AA%E5%88%86%E7%B1%BB)
 
@@ -36,6 +38,7 @@
 - [Built-in Types](https://docs.python.org/3/library/stdtypes.html)
 - [变量/可变-不可变类型/局部-全局变量](https://www.cnblogs.com/guigujun/p/9926446.html) :star:
 - [python-sets-are-mutable](https://stackoverflow.com/questions/14193438/are-python-sets-mutable)
+- [Python os.getenv() Examples](https://www.programcreek.com/python/example/210/os.getenv)
 - [Python 基础：is 和==的区别](https://www.cnblogs.com/lilz/p/9410319.html)
 - [python 的星号（\*）和双星号（\*\*）用法](https://www.cnblogs.com/empty16/p/6229538.html)
 - [@classmethod and @staticmethod for beginner](https://stackoverflow.com/questions/12179271/meaning-of-classmethod-and-staticmethod-for-beginner) :star:
@@ -46,7 +49,7 @@
 - [Absolute vs Relative Imports in Python](https://realpython.com/absolute-vs-relative-python-imports/)
 - [itertools — Functions creating iterators for efficient looping](https://docs.python.org/3/library/itertools.html#module-itertools) :star:
 - [python 语法之 装饰器 decorator](https://www.cnblogs.com/yutongzhu/p/5615764.html) :star: :star2:
-- [Python decorator](https://chase-seibert.github.io/blog/2013/12/17/python-decorator-optional-parameter.html#) :star: :star2:
+- [Python decorator](https://chase-seibert.github.io/blog/2013/12/17/python-decorator-optional-parameter.html#) :star: :star2: :heart:
 - [Python Decorators - \_\_call\_\_ in class](https://stackoverflow.com/questions/19497771/python-decorators-call-in-class)
 - [元类/metaclasses](https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python) :star: :star2:
 - [为什么 Python 不支持函数重载](https://www.zhihu.com/question/20053359)
@@ -108,10 +111,13 @@
 
 ## Git 代码版本管理
 
+- [Git: Delete a branch (local or remote)](https://makandracards.com/makandra/621-git-delete-a-branch-local-or-remote)
+
 ## Django web 框架
 
 ### Django 基础
 
+- [Object-Relational Mapping (ORM)](https://stackoverflow.com/questions/1279613/what-is-an-orm-and-where-can-i-learn-more-about-it)
 - [Django models.py, what's the difference between default, null, and blank?](https://stackoverflow.com/questions/4384098/in-django-models-py-whats-the-difference-between-default-null-and-blank)
 - [Django Making queries](https://docs.djangoproject.com/en/dev/topics/db/queries/#complex-lookups-with-q-objects) :star:
 - [Django queries - Aggregation](https://docs.djangoproject.com/en/2.2/topics/db/aggregation/) :star:
@@ -152,11 +158,14 @@
 - [Excluding Basic Authentication In A Single View - Django Rest Framework](https://stackoverflow.com/questions/33539606/excluding-basic-authentication-in-a-single-view-django-rest-framework)
 - [Linux + Nginx + Uwsgi + Django 搭建单服务实现多域名访问](https://mp.weixin.qq.com/s/baYuDLhlFsFrBXqGq9pBDA)
 - [使用 django-crontab 实现定时任务](https://www.jianshu.com/p/e4a8f173b4b0)
+- [Where to store secret keys DJANGO](https://stackoverflow.com/questions/15209978/where-to-store-secret-keys-django#)
 
 ### Django 面试
 
 - [Django 的笔试题 2015](http://python.jobbole.com/81871/)
 - [Django 的认识，面试题](https://www.cnblogs.com/chongdongxiaoyu/p/9403399.html)
+- [Tornado - a Python web framework](http://www.tornadoweb.org/en/stable/)
+- [python web框架比较：Django VS Tornado](http://www.maiziedu.com/article/9990/)
 
 ## 操作系统 基础
 
@@ -166,11 +175,49 @@
 
 ## Linux 命令行 基础
 
+- [Linux 常用命令 - 基础](https://note.youdao.com/ynoteshare1/index.html?id=7d073d849ae46be7f44fe31c7eed3fdc&type=note)
+- [Linux：PS命令详解与使用](https://www.cnblogs.com/wxgblogs/p/6591980.html)
+  ```
+  cat filename | head -n 3000 | tail -n +1000  显示1000行到3000行
+  cat filename | tail -n +3000 | head -n 1000  从第3000行开始，显示1000(即显示3000~3999行)
+  grep Aug /var/log/messages  在文件 '/var/log/messages'中查找关键词"Aug"
+  grep ^Aug /var/log/messages 在文件 '/var/log/messages'中查找以"Aug"开始的词汇
+  ps aux # 查看系统所有的进程数据
+  ps ax # 查看不与terminal有关的所有进程
+  ps -aux | grep test,查找进程名为test的进程
+  kill -9 pid  （-9表示强制关闭）
+  pkill 程序的名字
+  ```
+
 ## 数据库/SQL/MySQL
+
+- [SQL--contains用法](https://blog.csdn.net/gz775/article/details/6822214)
+- [Mysql导出(多张表)表结构及表数据 mysqldump用法](https://blog.csdn.net/kkk0526/article/details/78281694)
+- [OLAP、OLTP的介绍和比较](https://blog.csdn.net/zhangzheng0413/article/details/8271322/)
 
 ## Docker 基础
 
 - [Stop and remove all docker containers and images](http://blog.baudson.de/blog/stop-and-remove-all-docker-containers-and-images)
+
+## 后台/Backend 
+
+- [Nginx 相关介绍(Nginx是什么?能干嘛?)](https://www.cnblogs.com/wcwnina/p/8728391.html) :star:
+- [Nginx 安装与部署配置以及Nginx和uWSGI开机自启](https://www.cnblogs.com/wcwnina/p/8728430.html)
+- [ZooKeeper典型应用场景](https://www.cnblogs.com/linjiqin/p/6063758.html) :star:
+- [zookeeper干啥的](https://blog.csdn.net/u012540337/article/details/51916821)
+- [同是ZooKeeper - 进阶](https://my.oschina.net/u/3981166/blog/2249082)
+- [zookeeper的可视化web界面](https://www.cnblogs.com/lenmom/p/9167823.html)
+- [kazoo使用教程 - Python使用zookeeper](http://www.likuli.com/archives/746/)
+- [Jenkins之定时构建](https://blog.csdn.net/zzy1078689276/article/details/77520441) :star:
+- [influxdb使用说明](https://www.cnblogs.com/jackyroc/p/7677508.html)
+- [时序数据库InfluxDB使用详解](https://www.jianshu.com/p/a1344ca86e9b)
+- [基于InfluxDB+Grafana打造大数据监控利器](https://mp.weixin.qq.com/s/3HW9hOnsZtcdVT15lBmOfQ)
+- [基于OSS的文件系统设计](https://blog.csdn.net/ifwinds/article/details/66478204)
+
+### 后台/Backend 面试
+
+- [TCP和UDP的优缺点及区别](https://www.cnblogs.com/xiaomayizoe/p/5258754.html)  :star:
+- [对分布式事务及两阶段提交、三阶段提交的理解](https://www.cnblogs.com/AndyAo/p/8228099.html)
 
 ## 其他
 
