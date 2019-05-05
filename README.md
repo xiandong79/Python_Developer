@@ -111,6 +111,26 @@
 
 ## Git 代码版本管理
 
+- [git 常用命令列表](https://www.awaimai.com/179.html)
+
+  ```
+  $ git remote add origin git@github.com:yeszao/dofiler.git         # 配置远程git版本库
+  $ git pull origin master                                          # 下载代码及快速合并
+  $ git push origin master                                          # 上传代码及快速合并
+  $ git fetch origin                                                # 从远程库获取代码
+
+  $ git add .                                                       # 跟踪所有改动过的文件
+  $ git add <file>                                                  # 跟踪指定的文件
+
+  $ git branch                                                      # 显示所有分支
+  $ git checkout master                                             # 切换到 master 分支
+  $ git checkout -b dev                                             # 创建并切换到dev分支
+  $ git commit -m "first version"                                   # 提交
+
+  $ git status                                                      # 查看状态
+  $ git log                                                         # 查看提交历史
+  ```
+
 - [Git: Delete a branch (local or remote)](https://makandracards.com/makandra/621-git-delete-a-branch-local-or-remote)
 
 ## Django web 框架
@@ -165,58 +185,63 @@
 - [Django 的笔试题 2015](http://python.jobbole.com/81871/)
 - [Django 的认识，面试题](https://www.cnblogs.com/chongdongxiaoyu/p/9403399.html)
 - [Tornado - a Python web framework](http://www.tornadoweb.org/en/stable/)
-- [python web框架比较：Django VS Tornado](http://www.maiziedu.com/article/9990/)
+- [python web 框架比较：Django VS Tornado](http://www.maiziedu.com/article/9990/)
 
 ## 操作系统 基础
 
 - [进程、线程、协程及 IO 模型](https://www.cnblogs.com/xuyaping/p/6825115.html) :star:
 - [python 并发编程之多进程、多线程、异步和协程](https://www.cnblogs.com/tyomcat/p/5486827.html)
--
 
 ## Linux 命令行 基础
 
 - [Linux 常用命令 - 基础](https://note.youdao.com/ynoteshare1/index.html?id=7d073d849ae46be7f44fe31c7eed3fdc&type=note)
-- [Linux：PS命令详解与使用](https://www.cnblogs.com/wxgblogs/p/6591980.html)
-  ```
-  cat filename | head -n 3000 | tail -n +1000  显示1000行到3000行
-  cat filename | tail -n +3000 | head -n 1000  从第3000行开始，显示1000(即显示3000~3999行)
-  grep Aug /var/log/messages  在文件 '/var/log/messages'中查找关键词"Aug"
-  grep ^Aug /var/log/messages 在文件 '/var/log/messages'中查找以"Aug"开始的词汇
+- [linux 查找日志技巧](https://www.cnblogs.com/chjbbs/p/5761741.html)
+- [Linux：PS 命令详解与使用](https://www.cnblogs.com/wxgblogs/p/6591980.html)
+
+  ```bash
+  tail -f -n 20 filename # 动态展示 file 最后20行
+  cat filename | head -n 3000 | tail -n +1000 # 显示 1000 行到 3000 行
+  cat filename | tail -n +3000 | head -n 1000 # 从第 3000 行开始，显示 1000(即显示 3000~3999 行)
+  grep Aug /var/log/messages # 在文件 '/var/log/messages'中查找关键词"Aug"
+  grep ^Aug /var/log/messages # 在文件 '/var/log/messages'中查找以"Aug"开始的词汇
   ps aux # 查看系统所有的进程数据
-  ps ax # 查看不与terminal有关的所有进程
-  ps -aux | grep test,查找进程名为test的进程
-  kill -9 pid  （-9表示强制关闭）
-  pkill 程序的名字
+  ps ax # 查看不与 terminal 有关的所有进程
+  ps -aux | grep test # 查找进程名为 test 的进程
+  kill -9 pid #（-9 表示强制关闭）
+  pkill 程序的名字 # 杀死进程
+
   ```
 
 ## 数据库/SQL/MySQL
 
-- [SQL--contains用法](https://blog.csdn.net/gz775/article/details/6822214)
-- [Mysql导出(多张表)表结构及表数据 mysqldump用法](https://blog.csdn.net/kkk0526/article/details/78281694)
-- [OLAP、OLTP的介绍和比较](https://blog.csdn.net/zhangzheng0413/article/details/8271322/)
+- [MySQL 索引入门简述](https://www.awaimai.com/531.html) :star:
+- [MySQL 索引背后的数据结构及算法原理](http://blog.jobbole.com/24006/)
+- [SQL--contains 用法](https://blog.csdn.net/gz775/article/details/6822214)
+- [Mysql 导出(多张表)表结构及表数据 mysqldump 用法](https://blog.csdn.net/kkk0526/article/details/78281694)
+- [OLAP、OLTP 的介绍和比较](https://blog.csdn.net/zhangzheng0413/article/details/8271322/)
 
 ## Docker 基础
 
 - [Stop and remove all docker containers and images](http://blog.baudson.de/blog/stop-and-remove-all-docker-containers-and-images)
 
-## 后台/Backend 
+## 后台/Backend
 
-- [Nginx 相关介绍(Nginx是什么?能干嘛?)](https://www.cnblogs.com/wcwnina/p/8728391.html) :star:
-- [Nginx 安装与部署配置以及Nginx和uWSGI开机自启](https://www.cnblogs.com/wcwnina/p/8728430.html)
-- [ZooKeeper典型应用场景](https://www.cnblogs.com/linjiqin/p/6063758.html) :star:
-- [zookeeper干啥的](https://blog.csdn.net/u012540337/article/details/51916821)
-- [同是ZooKeeper - 进阶](https://my.oschina.net/u/3981166/blog/2249082)
-- [zookeeper的可视化web界面](https://www.cnblogs.com/lenmom/p/9167823.html)
-- [kazoo使用教程 - Python使用zookeeper](http://www.likuli.com/archives/746/)
-- [Jenkins之定时构建](https://blog.csdn.net/zzy1078689276/article/details/77520441) :star:
-- [influxdb使用说明](https://www.cnblogs.com/jackyroc/p/7677508.html)
-- [时序数据库InfluxDB使用详解](https://www.jianshu.com/p/a1344ca86e9b)
-- [基于InfluxDB+Grafana打造大数据监控利器](https://mp.weixin.qq.com/s/3HW9hOnsZtcdVT15lBmOfQ)
-- [基于OSS的文件系统设计](https://blog.csdn.net/ifwinds/article/details/66478204)
+- [Nginx 相关介绍(Nginx 是什么?能干嘛?)](https://www.cnblogs.com/wcwnina/p/8728391.html) :star:
+- [Nginx 安装与部署配置以及 Nginx 和 uWSGI 开机自启](https://www.cnblogs.com/wcwnina/p/8728430.html)
+- [ZooKeeper 典型应用场景](https://www.cnblogs.com/linjiqin/p/6063758.html) :star:
+- [zookeeper 干啥的](https://blog.csdn.net/u012540337/article/details/51916821)
+- [同是 ZooKeeper - 进阶](https://my.oschina.net/u/3981166/blog/2249082)
+- [zookeeper 的可视化 web 界面](https://www.cnblogs.com/lenmom/p/9167823.html)
+- [kazoo 使用教程 - Python 使用 zookeeper](http://www.likuli.com/archives/746/)
+- [Jenkins 之定时构建](https://blog.csdn.net/zzy1078689276/article/details/77520441) :star:
+- [influxdb 使用说明](https://www.cnblogs.com/jackyroc/p/7677508.html)
+- [时序数据库 InfluxDB 使用详解](https://www.jianshu.com/p/a1344ca86e9b)
+- [基于 InfluxDB+Grafana 打造大数据监控利器](https://mp.weixin.qq.com/s/3HW9hOnsZtcdVT15lBmOfQ)
+- [基于 OSS 的文件系统设计](https://blog.csdn.net/ifwinds/article/details/66478204)
 
 ### 后台/Backend 面试
 
-- [TCP和UDP的优缺点及区别](https://www.cnblogs.com/xiaomayizoe/p/5258754.html)  :star:
+- [TCP 和 UDP 的优缺点及区别](https://www.cnblogs.com/xiaomayizoe/p/5258754.html) :star:
 - [对分布式事务及两阶段提交、三阶段提交的理解](https://www.cnblogs.com/AndyAo/p/8228099.html)
 
 ## 其他
@@ -224,6 +249,7 @@
 - [PyCharm 常用快捷键和设置方法](https://www.jb51.net/article/131005.htm?utm_medium=referral)
 - [后端工程师成长路线图](./_static/backend_developer.jpg) :star:
 - [Markdown 简体中文与西文混排要点 - 李笑来](https://github.com/selfteaching/markdown-writing-with-mixed-cn-en) :star:
+- [My Favorite Django Packages in 2019](https://vsupalov.com/favorite-django-packages-2019/)
 
 ## 未分类
 
@@ -232,3 +258,7 @@
 - [Jenkins 构建触发器（定时构建项目](https://blog.csdn.net/e295166319/article/details/52920036)
 - [业务监控工具 Sentry 的搭建与使用](http://www.cnblogs.com/scharfsinnig/p/7467958.html) :yellow_heart: :star2:
 - [Sentry - 处理异常日志的正确姿势 也可 email+钉钉通知](https://segmentfault.com/a/1190000014847638) :star2:
+
+```
+
+```
