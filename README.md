@@ -214,6 +214,8 @@
 
 ## 数据库/SQL/MySQL
 
+- [SQL 速查表](https://github.com/enochtangg/quick-SQL-cheatsheet/blob/master/README_zh-hans.md) :star: :yellow_heart:
+- [sql-cheat-sheet-for-data-scientists](https://data36.com/wp-content/uploads/2018/12/sql-cheat-sheet-for-data-scientists-by-tomi-mester.pdf)
 - [MySQL 索引入门简述](https://www.awaimai.com/531.html) :star:
 - [MySQL 索引背后的数据结构及算法原理](http://blog.jobbole.com/24006/)
 - [SQL--contains 用法](https://blog.csdn.net/gz775/article/details/6822214)
@@ -258,7 +260,3 @@
 - [Jenkins 构建触发器（定时构建项目](https://blog.csdn.net/e295166319/article/details/52920036)
 - [业务监控工具 Sentry 的搭建与使用](http://www.cnblogs.com/scharfsinnig/p/7467958.html) :yellow_heart: :star2:
 - [Sentry - 处理异常日志的正确姿势 也可 email+钉钉通知](https://segmentfault.com/a/1190000014847638) :star2:
-
-```
-
-```
