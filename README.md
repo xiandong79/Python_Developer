@@ -11,6 +11,7 @@
   - [Python](#python)
     - [Python 基础](#python-%E5%9F%BA%E7%A1%80)
     - [Python 进阶](#python-%E8%BF%9B%E9%98%B6)
+      - [Python - gevent](#python---gevent)
     - [Python 实战中问题](#python-%E5%AE%9E%E6%88%98%E4%B8%AD%E9%97%AE%E9%A2%98)
     - [Python 数据科学 基础](#python-%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6-%E5%9F%BA%E7%A1%80)
     - [Python 数据科学 实战中问题](#python-%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6-%E5%AE%9E%E6%88%98%E4%B8%AD%E9%97%AE%E9%A2%98)
@@ -48,6 +49,19 @@
 
 - [Absolute vs Relative Imports in Python](https://realpython.com/absolute-vs-relative-python-imports/)
 - [itertools — Functions creating iterators for efficient looping](https://docs.python.org/3/library/itertools.html#module-itertools) :star:
+- [enum — Support for enumerations](https://docs.python.org/3/library/enum.html) :star:
+  ```python
+  from enum import Enum
+
+  class Color(Enum):
+      RED = 1
+      GREEN = 2
+
+  print(Color(2).name)
+  print(Color(2).value)
+  print(Color.GREEN.value)
+  print(list(Color))
+  ```
 - [python 语法之 装饰器 decorator](https://www.cnblogs.com/yutongzhu/p/5615764.html) :star: :star2:
 - [Python decorator](https://chase-seibert.github.io/blog/2013/12/17/python-decorator-optional-parameter.html#) :star: :star2: :heart:
 - [Python Decorators - \_\_call\_\_ in class](https://stackoverflow.com/questions/19497771/python-decorators-call-in-class)
@@ -62,11 +76,15 @@
 - [pip commands](https://pip.pypa.io/en/stable/user_guide/)
 - [PyPI 使用国内源](https://www.cnblogs.com/sunnydou/p/5801760.html)
 - [python-closures 闭包](https://www.geeksforgeeks.org/python-closures/)
-- [python 的异步 gevent、async、await](https://www.jianshu.com/p/0a91a446dda8) :star:
-- [关于 gevent 的几点思考](https://www.jianshu.com/p/861f29ac68e8)
 - [python 数据结构之哈希表](https://www.cnblogs.com/kumata/p/9157738.html)
 - [python 数据结构与算法 29-1 哈希查找](https://www.cnblogs.com/cxchanpin/p/7389133.html)
 - [Python 中的垃圾回收机制](http://python.jobbole.com/87843/)
+
+#### Python - gevent
+
+- [python 的异步 gevent、async、await](https://www.jianshu.com/p/0a91a446dda8) :star:
+- [关于 gevent 的几点思考](https://www.jianshu.com/p/861f29ac68e8)
+
 
 ### Python 实战中问题
 
@@ -209,12 +227,20 @@
   ps -aux | grep test # 查找进程名为 test 的进程
   kill -9 pid #（-9 表示强制关闭）
   pkill 程序的名字 # 杀死进程
-
   ```
 
 ## 数据库/SQL/MySQL
 
 - [SQL 速查表](https://github.com/enochtangg/quick-SQL-cheatsheet/blob/master/README_zh-hans.md) :star: :yellow_heart:
+- [Learn SQL in Y minutes](https://learnxinyminutes.com/docs/sql/)
+  ```sql
+  SELECT dept_name FROM departments WHERE dept_name LIKE '%en%';
+  SELECT * FROM departments WHERE dept_name LIKE 'S____'; 
+  -- with an 'S' and has exactly 4 characters after it. 
+  INSERT INTO tablename1 VALUES('Richard','Mutt');
+  SELECT MAX(released) FROM albums; -- COUNT(), SUM(), AVG(), MIN() / MAX()
+  UPDATE tablename1 SET fname='John' WHERE lname='Mutt';
+  ```
 - [sql-cheat-sheet-for-data-scientists](https://data36.com/wp-content/uploads/2018/12/sql-cheat-sheet-for-data-scientists-by-tomi-mester.pdf)
 - [MySQL 索引入门简述](https://www.awaimai.com/531.html) :star:
 - [MySQL 索引背后的数据结构及算法原理](http://blog.jobbole.com/24006/)
