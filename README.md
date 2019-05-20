@@ -24,7 +24,9 @@
     - [Django 面试](#django-%E9%9D%A2%E8%AF%95)
   - [操作系统 基础](#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9F%BA%E7%A1%80)
   - [Linux 命令行 基础](#linux-%E5%91%BD%E4%BB%A4%E8%A1%8C-%E5%9F%BA%E7%A1%80)
-  - [数据库/SQL/MySQL](#%E6%95%B0%E6%8D%AE%E5%BA%93sqlmysql)
+  - [数据库](#%E6%95%B0%E6%8D%AE%E5%BA%93)
+    - [SQL/MySQL](#sqlmysql)
+    - [Redis](#redis)
   - [Docker 基础](#docker-%E5%9F%BA%E7%A1%80)
   - [后台/Backend](#%E5%90%8E%E5%8F%B0backend)
     - [后台/Backend 面试](#%E5%90%8E%E5%8F%B0backend-%E9%9D%A2%E8%AF%95)
@@ -229,7 +231,9 @@
   pkill 程序的名字 # 杀死进程
   ```
 
-## 数据库/SQL/MySQL
+## 数据库
+
+### SQL/MySQL
 
 - [SQL 速查表](https://github.com/enochtangg/quick-SQL-cheatsheet/blob/master/README_zh-hans.md) :star: :yellow_heart:
 - [Learn SQL in Y minutes](https://learnxinyminutes.com/docs/sql/)
@@ -247,6 +251,11 @@
 - [SQL--contains 用法](https://blog.csdn.net/gz775/article/details/6822214)
 - [Mysql 导出(多张表)表结构及表数据 mysqldump 用法](https://blog.csdn.net/kkk0526/article/details/78281694)
 - [OLAP、OLTP 的介绍和比较](https://blog.csdn.net/zhangzheng0413/article/details/8271322/)
+
+
+### Redis
+
+- [redis基础.md - 特点/优势/数据类型](https://github.com/ScrappyZhang/python_web_Crawler_DA_ML_DL/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/redis/redis%E5%9F%BA%E7%A1%80.md) :star:
 
 ## Docker 基础
 
