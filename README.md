@@ -2,9 +2,9 @@
 
 ## 引言
 
-职业目标：Python 后端开发工程师、Python 数据科学工程师
+职业目标：Python 后端开发工程师、数据科学工程师
 
-本人从 2018 年 10 月毕业后开始工作，因为技术水平不足，而无法写出清晰凝练的个人博客。于是，希望在这里首先记录自己在工作学习中遇到的知识点，并温故而知新。
+本人从 2018 年 10 月毕业后开始工作，因为技术水平不足，而无法写出清晰凝练的个人博客。于是，希望在这里首先记录自己在工作学习中遇到的知识点，温故而知新。
 
 - [Python Developer 中文版](#python-developer-%E4%B8%AD%E6%96%87%E7%89%88)
   - [引言](#%E5%BC%95%E8%A8%80)
@@ -12,27 +12,32 @@
     - [Python 基础](#python-%E5%9F%BA%E7%A1%80)
     - [Python 进阶](#python-%E8%BF%9B%E9%98%B6)
       - [Python - gevent](#python---gevent)
-    - [Python 实战中问题](#python-%E5%AE%9E%E6%88%98%E4%B8%AD%E9%97%AE%E9%A2%98)
+      - [进程、线程、协程](#%E8%BF%9B%E7%A8%8B%E7%BA%BF%E7%A8%8B%E5%8D%8F%E7%A8%8B)
+    - [Python 实战](#python-%E5%AE%9E%E6%88%98)
     - [Python 数据科学 基础](#python-%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6-%E5%9F%BA%E7%A1%80)
-    - [Python 数据科学 实战中问题](#python-%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6-%E5%AE%9E%E6%88%98%E4%B8%AD%E9%97%AE%E9%A2%98)
+    - [Python 数据科学 实战](#python-%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6-%E5%AE%9E%E6%88%98)
   - [Python 面试](#python-%E9%9D%A2%E8%AF%95)
-  - [Git 代码版本管理](#git-%E4%BB%A3%E7%A0%81%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86)
   - [Django web 框架](#django-web-%E6%A1%86%E6%9E%B6)
     - [Django 基础](#django-%E5%9F%BA%E7%A1%80)
     - [Django 进阶](#django-%E8%BF%9B%E9%98%B6)
     - [Django 实战](#django-%E5%AE%9E%E6%88%98)
     - [Django 面试](#django-%E9%9D%A2%E8%AF%95)
-  - [操作系统 基础](#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9F%BA%E7%A1%80)
-  - [Linux 命令行 基础](#linux-%E5%91%BD%E4%BB%A4%E8%A1%8C-%E5%9F%BA%E7%A1%80)
   - [数据库](#%E6%95%B0%E6%8D%AE%E5%BA%93)
     - [SQL/MySQL](#sqlmysql)
     - [Redis](#redis)
+    - [InfluxDB](#influxdb)
     - [GraphQL - Get what the clients wants, no more, no less.](#graphql---get-what-the-clients-wants-no-more-no-less)
+  - [Git 代码版本管理](#git-%E4%BB%A3%E7%A0%81%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86)
+  - [Linux 命令行 基础](#linux-%E5%91%BD%E4%BB%A4%E8%A1%8C-%E5%9F%BA%E7%A1%80)
   - [Docker 基础](#docker-%E5%9F%BA%E7%A1%80)
   - [后台/Backend](#%E5%90%8E%E5%8F%B0backend)
+    - [Nginx](#nginx)
+    - [ZooKeeper](#zookeeper)
+    - [Jenkins](#jenkins)
+    - [Sentry](#sentry)
     - [后台/Backend 面试](#%E5%90%8E%E5%8F%B0backend-%E9%9D%A2%E8%AF%95)
   - [其他](#%E5%85%B6%E4%BB%96)
-  - [未分类](#%E6%9C%AA%E5%88%86%E7%B1%BB)
+  - [待分类](#%E5%BE%85%E5%88%86%E7%B1%BB)
 
 ## Python
 
@@ -90,7 +95,12 @@
 - [python 的异步 gevent、async、await](https://www.jianshu.com/p/0a91a446dda8) :star:
 - [关于 gevent 的几点思考](https://www.jianshu.com/p/861f29ac68e8)
 
-### Python 实战中问题
+#### 进程、线程、协程
+
+- [进程、线程、协程及 IO 模型](https://www.cnblogs.com/xuyaping/p/6825115.html) :star:
+- [python 并发编程之多进程、多线程、异步和协程](https://www.cnblogs.com/tyomcat/p/5486827.html)
+
+### Python 实战
 
 - [solve dictionary changed size during iteration](https://stackoverflow.com/questions/13519644/how-to-solve-dictionary-changed-size-during-iteration-in-python)
 - [What does metavar and action mean in argparse in Python?](https://stackoverflow.com/questions/19124304/what-does-metavar-and-action-mean-in-argparse-in-python)
@@ -109,15 +119,14 @@
 
 ### Python 数据科学 基础
 
-入门的话，[Top 20 Python libraries for data science in 2018](https://medium.com/activewizards-machine-learning-company/top-20-python-libraries-for-data-science-in-2018-2ae7d1db8049)
-
+- [Top 20 Python libraries for data science in 2018](https://medium.com/activewizards-machine-learning-company/top-20-python-libraries-for-data-science-in-2018-2ae7d1db8049)
 - [Creating Pandas DataFrames from Lists and Dictionaries](https://pbpython.com/pandas-list-dict.html) :star:
 - [Applying Operations Over pandas Dataframes](https://chrisalbon.com/python/data_wrangling/pandas_apply_operations_to_dataframes/)
 - [用 matplotlib 绘制柱状图和饼图](http://ningning.today/2015/04/17/python/%E7%94%A8matplotlib%E7%BB%98%E5%88%B6%E6%9F%B1%E7%8A%B6%E5%9B%BE%E5%92%8C%E9%A5%BC%E5%9B%BE/)
 - [Seaborn 热图绘制](https://blog.csdn.net/sunchengquan/article/details/78573244)
 - [10 个提高工作效率的 Pandas 小技巧](https://mp.weixin.qq.com/s/cH7glwk_YrBJ-48tY-hnFQ)
 
-### Python 数据科学 实战中问题
+### Python 数据科学 实战
 
 - [pandas.pivot_table](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.pivot_table.html)
 - [Pandas date_range to generate monthly data](https://stackoverflow.com/questions/34915828/pandas-date-range-to-generate-monthly-data-at-beginning-of-the-month)
@@ -130,30 +139,6 @@
 - [coding-interview-tips](https://realpython.com/python-coding-interview-tips/) :star:
 - [python_interview_question](https://github.com/kenwoodjw/python_interview_question)
 - [2018 最常见的 Python 面试题](https://blog.51cto.com/13719825/2172133)
-
-## Git 代码版本管理
-
-- [git 常用命令列表](https://www.awaimai.com/179.html)
-
-  ```
-  $ git remote add origin git@github.com:yeszao/dofiler.git         # 配置远程git版本库
-  $ git pull origin master                                          # 下载代码及快速合并
-  $ git push origin master                                          # 上传代码及快速合并
-  $ git fetch origin                                                # 从远程库获取代码
-
-  $ git add .                                                       # 跟踪所有改动过的文件
-  $ git add <file>                                                  # 跟踪指定的文件
-
-  $ git branch                                                      # 显示所有分支
-  $ git checkout master                                             # 切换到 master 分支
-  $ git checkout -b dev                                             # 创建并切换到dev分支
-  $ git commit -m "first version"                                   # 提交
-
-  $ git status                                                      # 查看状态
-  $ git log                                                         # 查看提交历史
-  ```
-
-- [Git: Delete a branch (local or remote)](https://makandracards.com/makandra/621-git-delete-a-branch-local-or-remote)
 
 ## Django web 框架
 
@@ -209,30 +194,6 @@
 - [Tornado - a Python web framework](http://www.tornadoweb.org/en/stable/)
 - [python web 框架比较：Django VS Tornado](http://www.maiziedu.com/article/9990/)
 
-## 操作系统 基础
-
-- [进程、线程、协程及 IO 模型](https://www.cnblogs.com/xuyaping/p/6825115.html) :star:
-- [python 并发编程之多进程、多线程、异步和协程](https://www.cnblogs.com/tyomcat/p/5486827.html)
-
-## Linux 命令行 基础
-
-- [Linux 常用命令 - 基础](https://note.youdao.com/ynoteshare1/index.html?id=7d073d849ae46be7f44fe31c7eed3fdc&type=note)
-- [linux 查找日志技巧](https://www.cnblogs.com/chjbbs/p/5761741.html)
-- [Linux：PS 命令详解与使用](https://www.cnblogs.com/wxgblogs/p/6591980.html)
-
-  ```bash
-  tail -f -n 20 filename # 动态展示 file 最后20行
-  cat filename | head -n 3000 | tail -n +1000 # 显示 1000 行到 3000 行
-  cat filename | tail -n +3000 | head -n 1000 # 从第 3000 行开始，显示 1000(即显示 3000~3999 行)
-  grep Aug /var/log/messages # 在文件 '/var/log/messages'中查找关键词"Aug"
-  grep ^Aug /var/log/messages # 在文件 '/var/log/messages'中查找以"Aug"开始的词汇
-  ps aux # 查看系统所有的进程数据
-  ps ax # 查看不与 terminal 有关的所有进程
-  ps -aux | grep test # 查找进程名为 test 的进程
-  kill -9 pid #（-9 表示强制关闭）
-  pkill 程序的名字 # 杀死进程
-  ```
-
 ## 数据库
 
 ### SQL/MySQL
@@ -259,10 +220,59 @@
 - [redis 基础.md - 特点/优势/数据类型](https://github.com/ScrappyZhang/python_web_Crawler_DA_ML_DL/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/redis/redis%E5%9F%BA%E7%A1%80.md) :star:
 - [CS-Notes/notes/Redis.md - 一文看懂 Redis](https://github.com/CyC2018/CS-Notes/blob/master/notes/Redis.md)
 
+### InfluxDB
+
+- [influxdb 使用说明](https://www.cnblogs.com/jackyroc/p/7677508.html)
+- [时序数据库 InfluxDB 使用详解](https://www.jianshu.com/p/a1344ca86e9b)
+- [基于 InfluxDB+Grafana 打造大数据监控利器](https://mp.weixin.qq.com/s/3HW9hOnsZtcdVT15lBmOfQ)
+
 ### GraphQL - Get what the clients wants, no more, no less.
 
 - [Django 使用 GraphQL 详解](https://blog.csdn.net/ns2250225/article/details/79348914)
 - [Building a GraphQL API with Django](https://stackabuse.com/building-a-graphql-api-with-django/)
+
+## Git 代码版本管理
+
+- [git 常用命令列表](https://www.awaimai.com/179.html)
+
+  ```
+  $ git remote add origin git@github.com:yeszao/dofiler.git         # 配置远程git版本库
+  $ git pull origin master                                          # 下载代码及快速合并
+  $ git push origin master                                          # 上传代码及快速合并
+  $ git fetch origin                                                # 从远程库获取代码
+
+  $ git add .                                                       # 跟踪所有改动过的文件
+  $ git add <file>                                                  # 跟踪指定的文件
+
+  $ git branch                                                      # 显示所有分支
+  $ git checkout master                                             # 切换到 master 分支
+  $ git checkout -b dev                                             # 创建并切换到dev分支
+  $ git commit -m "first version"                                   # 提交
+
+  $ git status                                                      # 查看状态
+  $ git log                                                         # 查看提交历史
+  ```
+
+- [Git: Delete a branch (local or remote)](https://makandracards.com/makandra/621-git-delete-a-branch-local-or-remote)
+
+## Linux 命令行 基础
+
+- [Linux 常用命令 - 基础](https://note.youdao.com/ynoteshare1/index.html?id=7d073d849ae46be7f44fe31c7eed3fdc&type=note)
+- [linux 查找日志技巧](https://www.cnblogs.com/chjbbs/p/5761741.html)
+- [Linux：PS 命令详解与使用](https://www.cnblogs.com/wxgblogs/p/6591980.html)
+
+  ```bash
+  tail -f -n 20 filename # 动态展示 file 最后20行
+  cat filename | head -n 3000 | tail -n +1000 # 显示 1000 行到 3000 行
+  cat filename | tail -n +3000 | head -n 1000 # 从第 3000 行开始，显示 1000(即显示 3000~3999 行)
+  grep Aug /var/log/messages # 在文件 '/var/log/messages'中查找关键词"Aug"
+  grep ^Aug /var/log/messages # 在文件 '/var/log/messages'中查找以"Aug"开始的词汇
+  ps aux # 查看系统所有的进程数据
+  ps ax # 查看不与 terminal 有关的所有进程
+  ps -aux | grep test # 查找进程名为 test 的进程
+  kill -9 pid #（-9 表示强制关闭）
+  pkill 程序的名字 # 杀死进程
+  ```
 
 ## Docker 基础
 
@@ -270,18 +280,28 @@
 
 ## 后台/Backend
 
+### Nginx
+
 - [Nginx 相关介绍(Nginx 是什么?能干嘛?)](https://www.cnblogs.com/wcwnina/p/8728391.html) :star:
 - [Nginx 安装与部署配置以及 Nginx 和 uWSGI 开机自启](https://www.cnblogs.com/wcwnina/p/8728430.html)
+
+### ZooKeeper
+
 - [ZooKeeper 典型应用场景](https://www.cnblogs.com/linjiqin/p/6063758.html) :star:
 - [zookeeper 干啥的](https://blog.csdn.net/u012540337/article/details/51916821)
 - [同是 ZooKeeper - 进阶](https://my.oschina.net/u/3981166/blog/2249082)
 - [zookeeper 的可视化 web 界面](https://www.cnblogs.com/lenmom/p/9167823.html)
 - [kazoo 使用教程 - Python 使用 zookeeper](http://www.likuli.com/archives/746/)
+
+### Jenkins
+
 - [Jenkins 之定时构建](https://blog.csdn.net/zzy1078689276/article/details/77520441) :star:
-- [influxdb 使用说明](https://www.cnblogs.com/jackyroc/p/7677508.html)
-- [时序数据库 InfluxDB 使用详解](https://www.jianshu.com/p/a1344ca86e9b)
-- [基于 InfluxDB+Grafana 打造大数据监控利器](https://mp.weixin.qq.com/s/3HW9hOnsZtcdVT15lBmOfQ)
-- [基于 OSS 的文件系统设计](https://blog.csdn.net/ifwinds/article/details/66478204)
+- [Jenkins 构建触发器（定时构建项目](https://blog.csdn.net/e295166319/article/details/52920036)
+
+### Sentry
+
+- [业务监控工具 Sentry 的搭建与使用](http://www.cnblogs.com/scharfsinnig/p/7467958.html) :yellow_heart: :star2:
+- [Sentry - 处理异常日志的正确姿势 也可 email+钉钉通知](https://segmentfault.com/a/1190000014847638) :star2:
 
 ### 后台/Backend 面试
 
@@ -295,10 +315,8 @@
 - [Markdown 简体中文与西文混排要点 - 李笑来](https://github.com/selfteaching/markdown-writing-with-mixed-cn-en) :star:
 - [My Favorite Django Packages in 2019](https://vsupalov.com/favorite-django-packages-2019/)
 
-## 未分类
+## 待分类
 
+- [基于 OSS 的文件系统设计](https://blog.csdn.net/ifwinds/article/details/66478204)
 - [HTTP Session、Cookie 机制详解](https://www.cnblogs.com/lyy-5518/p/5460994.html)
 - [跨域的问题](https://segmentfault.com/a/1190000015597029)
-- [Jenkins 构建触发器（定时构建项目](https://blog.csdn.net/e295166319/article/details/52920036)
-- [业务监控工具 Sentry 的搭建与使用](http://www.cnblogs.com/scharfsinnig/p/7467958.html) :yellow_heart: :star2:
-- [Sentry - 处理异常日志的正确姿势 也可 email+钉钉通知](https://segmentfault.com/a/1190000014847638) :star2:
