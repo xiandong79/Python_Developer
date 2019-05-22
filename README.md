@@ -27,6 +27,7 @@
   - [数据库](#%E6%95%B0%E6%8D%AE%E5%BA%93)
     - [SQL/MySQL](#sqlmysql)
     - [Redis](#redis)
+    - [GraphQL - Get what the clients wants, no more, no less.](#graphql---get-what-the-clients-wants-no-more-no-less)
   - [Docker 基础](#docker-%E5%9F%BA%E7%A1%80)
   - [后台/Backend](#%E5%90%8E%E5%8F%B0backend)
     - [后台/Backend 面试](#%E5%90%8E%E5%8F%B0backend-%E9%9D%A2%E8%AF%95)
@@ -52,6 +53,7 @@
 - [Absolute vs Relative Imports in Python](https://realpython.com/absolute-vs-relative-python-imports/)
 - [itertools — Functions creating iterators for efficient looping](https://docs.python.org/3/library/itertools.html#module-itertools) :star:
 - [enum — Support for enumerations](https://docs.python.org/3/library/enum.html) :star:
+
   ```python
   from enum import Enum
 
@@ -64,6 +66,7 @@
   print(Color.GREEN.value)
   print(list(Color))
   ```
+
 - [python 语法之 装饰器 decorator](https://www.cnblogs.com/yutongzhu/p/5615764.html) :star: :star2:
 - [Python decorator](https://chase-seibert.github.io/blog/2013/12/17/python-decorator-optional-parameter.html#) :star: :star2: :heart:
 - [Python Decorators - \_\_call\_\_ in class](https://stackoverflow.com/questions/19497771/python-decorators-call-in-class)
@@ -86,7 +89,6 @@
 
 - [python 的异步 gevent、async、await](https://www.jianshu.com/p/0a91a446dda8) :star:
 - [关于 gevent 的几点思考](https://www.jianshu.com/p/861f29ac68e8)
-
 
 ### Python 实战中问题
 
@@ -239,8 +241,8 @@
 - [Learn SQL in Y minutes](https://learnxinyminutes.com/docs/sql/)
   ```sql
   SELECT dept_name FROM departments WHERE dept_name LIKE '%en%';
-  SELECT * FROM departments WHERE dept_name LIKE 'S____'; 
-  -- with an 'S' and has exactly 4 characters after it. 
+  SELECT * FROM departments WHERE dept_name LIKE 'S____';
+  -- with an 'S' and has exactly 4 characters after it.
   INSERT INTO tablename1 VALUES('Richard','Mutt');
   SELECT MAX(released) FROM albums; -- COUNT(), SUM(), AVG(), MIN() / MAX()
   UPDATE tablename1 SET fname='John' WHERE lname='Mutt';
@@ -252,10 +254,15 @@
 - [Mysql 导出(多张表)表结构及表数据 mysqldump 用法](https://blog.csdn.net/kkk0526/article/details/78281694)
 - [OLAP、OLTP 的介绍和比较](https://blog.csdn.net/zhangzheng0413/article/details/8271322/)
 
-
 ### Redis
 
-- [redis基础.md - 特点/优势/数据类型](https://github.com/ScrappyZhang/python_web_Crawler_DA_ML_DL/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/redis/redis%E5%9F%BA%E7%A1%80.md) :star:
+- [redis 基础.md - 特点/优势/数据类型](https://github.com/ScrappyZhang/python_web_Crawler_DA_ML_DL/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/redis/redis%E5%9F%BA%E7%A1%80.md) :star:
+- [CS-Notes/notes/Redis.md - 一文看懂 Redis](https://github.com/CyC2018/CS-Notes/blob/master/notes/Redis.md)
+
+### GraphQL - Get what the clients wants, no more, no less.
+
+- [Django 使用 GraphQL 详解](https://blog.csdn.net/ns2250225/article/details/79348914)
+- [Building a GraphQL API with Django](https://stackabuse.com/building-a-graphql-api-with-django/)
 
 ## Docker 基础
 
